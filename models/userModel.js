@@ -14,7 +14,7 @@ const AutoIncrement = AutoIncrementFactory(connection);
 const userSchema = new mongoose.Schema({
   _id: { type: Number },
   name: { type: String, required: true },
-  email: { type: String, required: true, unique: true },
+  email: { type: String, required: true},
   updated: Date,
   created: { type: Date, default: Date.now }
 });
