@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavigationBar from './components/NavigationBar';
 import UserTable from './components/UserTable';
 import AddUser from './components/AddUser';
-import SearchUser from './components/SearchUser';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { Container } from 'react-bootstrap';
@@ -22,7 +21,6 @@ const App = () => {
         <Container className="mt-4">
           <Routes>
             <Route path="/add" element={<AddUser onUserAdded={handleUserAdded} />} />
-            <Route path="/search" element={<SearchUser />} />
             <Route path="/display" element={<UserTable key={userAdded} />} />
             <Route path="/" element={<UserTable key={userAdded} />} />
           </Routes>

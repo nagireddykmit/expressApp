@@ -37,6 +37,7 @@ const AddUser = ({ onUserAdded }) => {
           <Form.Control
             type="text"
             placeholder="Enter name"
+            name='name'
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
@@ -45,6 +46,7 @@ const AddUser = ({ onUserAdded }) => {
           <Form.Label>Email</Form.Label>
           <Form.Control
             type="email"
+            name='email'
             placeholder="Enter email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
